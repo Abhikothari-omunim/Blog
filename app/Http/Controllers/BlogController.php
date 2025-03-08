@@ -58,7 +58,6 @@ class BlogController extends Controller
      */
     public function update1(Request $request, Blog $blog)
     {
-        dd($request->all() , $blog);
         $validatedData = $request->validate([
             'name' => 'required|string|max:30|min:3',
             'data' => 'required|string|max:50|min:3',
